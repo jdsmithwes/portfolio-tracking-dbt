@@ -11,7 +11,7 @@ sources:
       - name: ABC_BANK_POSITION
         description: The landing table holding the data imported from the CSV extracted by ABC Bank.
         columns:
-          - name: ACCOUNTID
+          - name: ACCOUNT_ID
             description: The code for the account at the ABC Bank.
             tests:
               - not_null
@@ -48,13 +48,5 @@ sources:
               - not_null
           - name: CURRENCY
             description: The currency for the monetary amounts of the position.
-            tests:
-              - not_null
-          - name: UNREALIZED_PROFIT
-            description: The unrealized profit on the position.
-            tests:
-              - not_null
-          - name: UNREALIZED_PROFIT_PCT
-            description: The unrealized profit percentage on the position.
             tests:
               - not_null

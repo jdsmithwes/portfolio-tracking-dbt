@@ -32,9 +32,9 @@ models:
       +materialized: table
       +schema: MARTS
 
-    portfolio:
-      +materialized: table
-      +schema: MART_PORTFOLIO
+      portfolio:
+        +materialized: table
+        +schema: MART_PORTFOLIO
 
 snapshots:
   portfolio_tracking:
